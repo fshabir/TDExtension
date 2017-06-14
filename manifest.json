@@ -1,0 +1,32 @@
+{
+    "name": "Time Doctor viewer",
+    "version": "0.1",
+    "icons": {
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "manifest_version": 2,
+    "description": "Gets information from Time Doctor account",
+    "permissions": [
+        "identity",
+        "http://*.timedoctor.com/",
+        "https://*.timedoctor.com/",
+        "storage"
+    ],
+    "content_security_policy": "script-src 'self';object-src 'self'",
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "oauth2": {
+        "client_id": "713_5762gm0shlwkko0ckoo4s84swsk8wcwcsk8kg88k88w4c0oo08",
+        "scopes": ["all"]
+    },
+    "browser_action": {
+        "default_title": "Time Doctor",
+        "default_icon": {
+            "48": "icon.png",
+            "128": "icon.png"
+        },
+        "default_popup": "popup.html"
+    }
+}
